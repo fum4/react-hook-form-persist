@@ -17,7 +17,7 @@ const ReactHookFormPersist = ({
   exclude,
   encode,
   decode,
-}: ReactHookFormPersistProps) => {
+}: ReactHookFormPersistProps): null => {
   const { watch, setValue } = useForm<FieldValues>();
   const storage = session ? sessionStorage : localStorage;
   const values = watch();
